@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Free Mentors | Mentor Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/mentor.css">
+</head>
+<body>
+     <header>
+        <div class="containers">
+                <a href="index.html">
+                    <div id = "logo">
+                        <h1>Free Mentors</h1>
+                    </div>
+                </a>
+            <div class="admin-nav">
+                <ul>                    
+                    <li><a href="index.html"><button>Logout</button></a></li>   
+                </ul>
+                <div class="menu">
+                    <img src="../assets/img/icons/menu.svg" alt="menu">
+                </div>
+            </div>
+    
+        </div>  
+    </header>
+
+        <div class="nav-menu">
+            <ul>
+                <div class="close">X</div>
+                <li>
+                    <a href="index.html">
+                        <div class="menu-side">
+                            Logout
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="table">
+            <div>
+                <center><h1>Mentor Dashboard</h1></center>
+                <hr>
+            </div><br><br>
+            <table id="sessions">
+                <thead>
+                    <tr>
+                        <th>SessionId</th>
+                        <th>MentorId</th>
+                        <th>MenteeId</th>
+                        <th>Questions</th>
+                        <th>MenteeEmail</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="view">
+                        <td>1</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>What is business? <br> How to grow your business globally?</td>
+                        <td>clementndatabaye@gmail.com</td>
+                        <td>Pending</td>
+                        <td colspan="2">
+                            <button id="changer">Accept</button>
+                            <button id="changer">Decline</button>
+                        </td>
+                    </tr>
+
+                    <tr class="view">
+                        <td>3</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>How to do e-commerce?</td>
+                        <td>clementndatabaye@gmail.com</td>
+                        <td>Pending</td>
+                        <td colspan="2">
+                            <button id="changer">Accept</button>
+                            <button id="changer">Decline</button>
+                        </td>
+                    </tr>
+
+                    <tr class="view">
+                        <td>4</td>
+                        <td>4</td>
+                        <td>50</td>
+                        <td>How to be a good leader?</td>
+                        <td>clementndatabaye@gmail.com</td>
+                        <td>Pending</td>
+                        <td colspan="2">
+                            <button id="changer">Accept</button>
+                            <button id="changer">Decline</button>
+                        </td>
+                    </tr>
+
+                    
+                                         
+                </tbody>
+            </table>
+           </div>
+    <script src="../js/small.js"></script>
+</body>
+</html>
