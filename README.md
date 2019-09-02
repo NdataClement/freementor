@@ -13,7 +13,7 @@
 
 **User Interface**
 
->https://ndataclento.github.io/free-mentor/UI/html/index.html
+>https://ndataclento.github.io/freementor/UI/html/index.html
 
  
 **Technology used**
