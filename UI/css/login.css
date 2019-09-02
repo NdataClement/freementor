@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(1, 0, 7, 0.9), rgba(2, 0, 8, 0.9)), url('../assets/img/login.png') no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    color: white;
+    min-height: 100vh;
+}
+
+header a{
+    min-height: 70px;
+    padding-top: 30px;
+    text-decoration: none; 
+    color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+#link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+header #logo{
+    float: left;
+}
+
+header #logo h1{
+    margin: 0;
+    margin-top: 20px;
+}
+
+header li{
+    display: inline;
+    padding: 0 0 0 25px;
+}
+header li button{
+    display: inline;
+    padding: 0 0 0 25px;
+    background-color :#0a554fe8;
+    border: none;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 2px;
+    color:whitesmoke;
+    outline: none;
+}
+
+header li button:hover{
+    background-color: #369b92e8;
+}
+.index-nav-bar{
+    background-color: #111E6C;
+    border-bottom: 1px solid #4b5152;
+    width: 100%;
+    min-height: 80px;
+    padding: 0;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.nav-menu {
+    font-size: 12px;
+    width: 15%;
+    padding-top: 20px;
+    display: none;
+}
+
+.nav-menu li{
+   padding: 15px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+}
+
+.menu{
+    display: none;
+}
+nav{
+    padding: 10px;
+    float: right;
+    margin-top: 10px;
+    font-size: 25px;    
+}
+
+.headers{
+    background: linear-gradient(rgba(1, 0, 7, 0.9), rgba(2, 0, 8, 0.9)), url('../assets/img/login.png') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#Form{
+    margin-top: 6%;
+    width: 38%;
+    margin-left: 32%;
+}
+
+#Form .inputBox{
+    position: relative;
+}
+
+#Form h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+}
+
+#Form .inputBox input{
+ width: 100%;
+ padding: 15px 0;
+ font-size: 16px;
+ color: #fff;
+ margin-bottom: 30px;
+ outline: none;
+ border: none;
+ border-bottom: 1px solid gray;
+ background: transparent;
+ 
+}
+
+#Form .inputBox label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: darkgray;
+    pointer-events: none;
+    transition: .6s;
+}
+
+#Form .inputBox input:focus ~ label,
+#Form .inputBox input:valid ~ label
+
+{
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+}
+
+#Form input[type="submit"]{
+    background: #0a554fe8;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+#Form input[type="submit"]:hover{
+    background-color: #369b92e8;
+}
+
+#signInForm a:hover{
+    color: darkgray;
+}
+
+#Form p{
+    margin-bottom: 30px;
+}
+.container{
+    width: 87%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 98%;
+        margin: auto;
+    }
+
+    header{
+        min-height: 100vh;
+        height: auto;
+
+    }
+
+    header #logo,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav li button{
+        margin-right: 5px;
+    }
+
+    .close{
+        margin: 10px;
+        font-size: 25px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        position: absolute;
+        border: 1px solid #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .nav-menu{
+        background:#131111;
+        width: 45%;
+        position: fixed;
+        z-index: 500;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 0px 8px 2px #0e000057;
+       transform:translateX(100%);
+        -webkit-transform: translateX(100%);
+        -webkit-transition:transform 0.6s ease;
+        transition: transform 0.5s ease;
+        display: block;
+    }
+
+    .nav-menu ul{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .nav-menu li a{
+        text-decoration: none;
+    }
+    .menu-side{
+        display: block;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 21px;
+    }
+
+    #Form{
+        float: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    header li button{
+        display: none;
+    }
+
+    .index-nav-bar{
+        min-height: 25px;
+    }
+
+    header #logo h1 {
+        margin: 0;
+        margin-top: 14px;
+        margin-left: 8px;
+        float: left;
+    }
+}
