@@ -1,3 +1,7 @@
+[![Coverage Status](https://coveralls.io/repos/github/Ndataclento/freementor/badge.svg?branch=develop)](https://coveralls.io/github/Ndataclento/freementor?branch=develop)
+[![Build Status](https://travis-ci.org/Ndataclento/freementor.svg?branch=develop)](https://travis-ci.org/Ndataclento/freementor)
+[![Maintainability](https://api.codeclimate.com/v1/badges/63a557cdd3e40c43a65d/maintainability)](https://codeclimate.com/github/Ndataclento/freementor/maintainability)
+
 # Free-Mentors
 **Free Mentors** is a web application that links accomplished professionals and young people where they provide free mentorship sessions.
 
