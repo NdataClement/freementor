@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "nyc --reporter=text --reporter=lcov mocha --require babel-register server/tests/**/*.test.js --exit",
+        "coverage": "nyc report --reporter=text-lcov | coveralls",
         "start": "nodemon server.js --exec babel-node --presets env"
     },
     "author": "",
