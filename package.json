@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "nyc --reporter=text --reporter=lcov mocha --require babel-register tests/**/*.test.js --exit",
+        "test": "nyc --reporter=text --reporter=lcov mocha --require babel-register ../server/tests/**/*.test.js --exit",
         "start": "nodemon server.js --exec babel-node --presets env"
     },
     "author": "",
