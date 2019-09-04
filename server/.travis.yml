@@ -8,6 +8,6 @@ cache:
     - node_modules
 language: .node_js
 node_js: 
-  - "10"
+  - "10.16.3"
 script: 
   - "npm test"
