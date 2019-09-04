@@ -55,6 +55,22 @@ header li button:hover{
     background-color: #369b92e8;
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    color: white;
+    bottom: 0;
+
+}
+
+.footer-section {
+   background-color: #111E6C;
+    border-bottom: 1px solid #4b5152;
+    text-align: center; 
+    padding: 10px;
+    
+}
+
 .session {
     max-width: 700px;
     padding: 20px 20px;

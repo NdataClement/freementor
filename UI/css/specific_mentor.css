@@ -54,6 +54,37 @@ header li button:hover{
     background-color: #369b92e8;
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    color: white;
+    bottom: 0;
+
+}
+
+.footer-section {
+   background-color: #111E6C;
+    border-bottom: 1px solid #4b5152;
+    text-align: center; 
+    padding: 10px;
+    
+}
+
+.nav-menu {
+    font-size: 12px;
+    width: 15%;
+    padding-top: 20px;
+    display: none;
+}
+
+.nav-menu li{
+   padding: 15px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+}
+
 table{
     font-weight: normal;
     width: 100%;
@@ -65,13 +96,12 @@ table{
     width: 83%;
     margin-top: 130px;
     z-index: 0;
-    margin-left: 100px;
+    margin-left: 50px;
     padding-bottom: 20px;
 }
-#specific{
+#mentors{
     margin-left: 20px;
 }
-
 
 .view:hover{
     background:#f1eef1;
@@ -125,6 +155,11 @@ table th, table td {
     border-bottom: 1px solid #ddd;
     text-align: center;
 }
+.view a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
 
 .nav-menu{
     display: none;
@@ -135,6 +170,9 @@ table th, table td {
     .containers{
         width: 90%;
         margin: auto;
+    }
+    .admin-nav ul{
+       display: none;
     }
     
     .close{
@@ -160,6 +198,24 @@ table th, table td {
         right: 0;
         margin-right: -50px;
         margin-top: 20px;
+    }
+    .table{
+        width: 87%;
+        margin-top: 8px;
+        z-index: 0;
+        margin-left: 2px;
+        overflow: auto;
+    }
+    .table h1{
+        width: 100%;
+        text-align: center;
+    }
+    td{
+        padding-right: 50px;
+        padding-left: 2px;
+        height: 36px;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd;
     }
     .nav-menu{
         background:#131111;
@@ -188,23 +244,5 @@ table th, table td {
         margin-top: 20px;
         color: #fff;
         font-size: 21px;
-    }
-    .table{
-        width: 87%;
-        margin-top: 20px;
-        z-index: 0;
-        margin-left: 2px;
-        overflow: auto;
-    }
-    .table h1{
-        width: 100%;
-        text-align: center;
-    }
-    td{
-        padding-right: 50px;
-        padding-left: 2px;
-        height: 36px;
-        vertical-align: middle;
-        border-bottom: 1px solid #ddd;
     }
     }
