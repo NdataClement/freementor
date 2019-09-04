@@ -14,6 +14,18 @@ body{
     overflow-x: hidden;
 }
 
+footer {
+    color: white;
+    bottom: 0;
+}
+
+.footer-section {
+   background-color: #111E6C;
+    border-bottom: 1px solid #4b5152;
+    text-align: center; 
+    padding: 10px;
+}
+
 .container{
     width: 87%;
     margin: auto;
@@ -120,6 +132,7 @@ nav{
     width: 32%;
     margin-top: -360px;
     margin-right: 1px;
+    margin-bottom: 10px;
 }
 
 #Form .inputBox{
@@ -127,7 +140,7 @@ nav{
 }
 
 #Form h2{
-    margin: 0 0 30px;
+    margin-top: 50px; 
     padding: 0;
     color: whitesmoke;
     text-align: center;
@@ -268,6 +281,7 @@ nav{
         text-align: center;
         width: 100%;
     }
+
 
     #Form{
         float: center;
