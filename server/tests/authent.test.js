@@ -47,16 +47,4 @@ describe('view mentors', () => {
                 expect(res.body.status).to.be.equal(404);
             });
     });
-    it('change user', () => {
-        const token = jwt.sign(generate, 'REST_FUL_API', { expiresIn: '24h' });
-        chai.request(app)
-            .patch('/api/v1/users/2')
-            .set('Authorization', token)
-            .send({
-                user: 'mentor',
-            })
-            .end((err, res) => {
-                expect(res.body.status).to.be.equal(400);
-            });
-    });
 });

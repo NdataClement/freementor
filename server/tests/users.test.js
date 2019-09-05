@@ -209,7 +209,7 @@ describe('signin', () => {
 
 
 
-    it('Incorrect Password', (done) => {
+    it('Incorrect Password', () => {
 
         chai.request(app)
 
@@ -232,8 +232,6 @@ describe('signin', () => {
             expect(res.body).to.have.property('error');
 
             expect(res.body).to.be.an('object');
-
-            done();
 
         });
 
