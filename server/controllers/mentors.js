@@ -3,7 +3,6 @@ import UsersModel from '../model/user';
 const Mentors = {
 
     getAllMentors(req, res) {
-        console.log(req.user.firstName);
         const mentors = UsersModel.users.filter(userType => userType.type === 'mentor');
         if (!mentors) { return res.status(404).json({ status: 404, error: 'There is no mentor' }); }
         return res.status(200).json({

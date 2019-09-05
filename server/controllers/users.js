@@ -1,7 +1,5 @@
 import jwt from 'jsonwebtoken';
 import UsersModel from '../model/user';
-import login from '../middleware/find';
-import bcrypt from 'bcryptjs';
 
 const Users = {
     signup(req, res) {
