@@ -14,10 +14,10 @@ exports.validateUser = (user) => {
     return joi.validate(user, inputValidation);
 };
 
-exports.validateLogin = () => {
-    const login = {
+exports.validateLogin = (login) => {
+    const inputValidation = {
         email: joi.string().email().required(),
         password: joi.string().min(6).required(),
     };
-    return joi.validate(login);
+    return joi.validate(login, inputValidation);
 };
