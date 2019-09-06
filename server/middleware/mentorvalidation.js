@@ -21,8 +21,6 @@ export const checkinput = (req, res, next) => {
         const { error } = validate.validateSession(req.body);
         if (error) return res.status(400).json({ status: 400, error: error.details[0].message });
 
-
-
         next();
     } catch (error) {
 

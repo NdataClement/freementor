@@ -7,7 +7,7 @@ exports.validateUser = (user) => {
         lastName: joi.string().min(3).required().regex(/^[A-Za-z]+$/),
         email: joi.string().email().required(),
         password: joi.string().min(6).required(),
-        bio: joi.string().required(),
+        bio: joi.string().required().regex(/^[0-9]+$/),
         occupation: joi.string().required(),
         expertise: joi.string().required(),
     };
