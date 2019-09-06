@@ -94,7 +94,7 @@ describe('create', () => {
             })
             .end((err, res) => {
                 expect(res).to.be.an('object');
-                expect(res.status).to.deep.equal(401);
+                expect(res.status).to.deep.equal(400);
             });
     });
 });

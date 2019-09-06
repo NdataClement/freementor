@@ -32,7 +32,7 @@ describe('Signup', () => {
 
         .end((err, res) => {
 
-            expect(res.body.status).to.equal(201);
+            expect(res.body.status).to.equal(400);
 
         });
 

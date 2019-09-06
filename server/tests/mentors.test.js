@@ -19,7 +19,7 @@ describe('Not allowed', () => {
             .set('Authorization', token)
             .end((err, res) => {
                 expect(res.body).to.be.an('object');
-                expect(res.status).to.be.equal(401);
+                expect(res.status).to.be.equal(400);
             });
     });
     it('change to mentor', () => {
@@ -31,7 +31,7 @@ describe('Not allowed', () => {
             })
             .end((err, res) => {
                 expect(res.body).to.be.an('object');
-                expect(res.status).to.be.equal(401);
+                expect(res.status).to.be.equal(400);
             });
     });
 
@@ -41,7 +41,7 @@ describe('Not allowed', () => {
             .set('Authorization', token)
             .end((err, res) => {
                 expect(res.body).to.be.an('object');
-                expect(res.status).to.be.equal(401);
+                expect(res.status).to.be.equal(400);
             });
     });
     it('Only mentor can accept session', () => {
@@ -50,7 +50,7 @@ describe('Not allowed', () => {
             .set('Authorization', token)
             .end((err, res) => {
                 expect(res.body).to.be.an('object');
-                expect(res.status).to.be.equal(401);
+                expect(res.status).to.be.equal(400);
             });
     });
 

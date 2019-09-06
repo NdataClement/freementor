@@ -3,16 +3,39 @@ import bcrypt from 'bcryptjs';
 class Users {
     constructor() {
         this.users = [{
-            id: 1,
-            firstName: "Jane",
-            lastName: "Doe",
-            email: "janedoe@gmail.com",
-            password: "$2a$10$g8O5wwQVDhvAi6xkcVDnyuBOOditRjvJtCozf4.Y2R6sQ/EbWmcaO",
-            bio: "master",
-            occupation: "ceo",
-            expertise: "programming",
-            type: 'admin',
-        }];
+                id: 1,
+                firstName: "Jane",
+                lastName: "Doe",
+                email: "janedoe@gmail.com",
+                password: "$2a$10$g8O5wwQVDhvAi6xkcVDnyuBOOditRjvJtCozf4.Y2R6sQ/EbWmcaO",
+                bio: "master",
+                occupation: "ceo",
+                expertise: "programming",
+                type: 'admin',
+            },
+            {
+                id: 2,
+                firstName: "Clement",
+                lastName: "Ndata",
+                email: "ndataclento@gmail.com",
+                password: "$2a$10$g8O5wwQVDhvAi6xkcVDnyuBOOditRjvJtCozf4.Y2R6sQ/EbWmcaO",
+                bio: "master",
+                occupation: "ceo",
+                expertise: "programming",
+                type: 'user',
+            },
+            {
+                id: 3,
+                firstName: "ndata",
+                lastName: "Ndacleta",
+                email: "ndataclentoghf@gmail.com",
+                password: "$2a$10$g8O5wwQVDhvAi6xkcVDnyuBOOditRjvJtCozf4.Y2R6sQ/EbWmcaO",
+                bio: "master",
+                occupation: "ceo",
+                expertise: "programming",
+                type: 'mentor',
+            },
+        ];
     }
 
 

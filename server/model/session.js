@@ -1,6 +1,13 @@
 class Sessions {
     constructor() {
-        this.sessions = [];
+        this.sessions = [{
+            sessionId: 1,
+            mentorId: 1,
+            menteeId: 1,
+            questions: "what is it",
+            menteeEmail: "dlement@gmail.com",
+            status: "pending",
+        }];
     }
 
     createSession(data) {
