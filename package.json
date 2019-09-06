@@ -2,11 +2,11 @@
     "name": "free",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "./server/server.js",
     "scripts": {
         "test": "nyc --reporter=text --reporter=lcov mocha --require babel-register server/tests/**/*.test.js --exit",
         "coverage": "nyc report --reporter=text-lcov | coveralls",
-        "start": "babel-node server/server.js"
+        "start": "nodemon --exec babel-node server/server -- presets env"
     },
     "author": "",
     "license": "ISC",
