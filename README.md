@@ -21,7 +21,7 @@
   
 **Setup**
   1. Clone the repository
-     ```https://github.com/Ndataclento/free-menntor.git```
+     ```https://github.com/Ndataclento/freementor.git```
      
   2. Install dependencies
   
