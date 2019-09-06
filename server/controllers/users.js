@@ -17,11 +17,6 @@ const Users = {
             data: {
                 "token": token,
                 message: "User created successfully",
-                id: user.id,
-                firstName: user.firstName,
-                lastName: user.lastName,
-                email: user.email,
-                type: user.type
             },
         });
     },
@@ -39,9 +34,6 @@ const Users = {
             message: 'User is successfully logged in',
             data: {
                 "token": token,
-                firstName: generate.firstName,
-                lastName: generate.lastName,
-                type: generate.type,
             },
         });
     },

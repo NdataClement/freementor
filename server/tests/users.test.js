@@ -20,20 +20,20 @@ describe('Signup', () => {
         .post('/api/v1/auth/signup')
 
         .send({
-            firstName: 'Clement',
-            lastName: 'Ndatabaye',
-            email: 'clementndatabaye@gmail.com',
-            password: '123456',
-            bio: 'master',
-            occupation: 'ceo',
-            expertise: 'programming',
-
+            firstName: "Clement",
+            lastName: "Ndata",
+            email: "ndataclento@gmail.com",
+            password: "1234567",
+            bio: "master",
+            occupation: "ceo",
+            expertise: "programming",
+            type: 'user'
         })
 
         .end((err, res) => {
 
-            expect(res.body.status).to.equal(201);
-
+            expect(res.body.status).to.be.equal(400);
+            expect(res).to.have.property('status');
         });
 
     });
@@ -50,19 +50,14 @@ describe('Signup', () => {
 
             email: 'janedoe@gmail.com',
 
-            password: '$2a$10$g8O5wwQVDhvAi6xkcVDnyuBOOditRjvJtCozf4.Y2R6sQ/EbWmcaO',
+            password: '1234567',
 
         })
 
         .end((err, res) => {
 
-            expect(res.body.status).to.equal(400);
+            expect(res.body.status).to.be.equal(200);
 
-            expect(res.body).to.have.property('status');
-
-            expect(res.body).to.have.property('error');
-
-            expect(res.body).to.be.an('object');
 
         });
 
@@ -113,6 +108,7 @@ describe('Signup', () => {
         .set('Accept', 'application/json')
 
         .send({
+            id: 5,
 
             firstName: 'jane',
 
@@ -121,6 +117,7 @@ describe('Signup', () => {
             email: 'janedoe@gmail.com',
 
             password: '1234567',
+
 
         })
 
