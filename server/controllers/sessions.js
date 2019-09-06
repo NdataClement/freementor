@@ -1,11 +1,6 @@
 import SessionsModel from '../model/session';
-import validate from '../helpers/session-validation';
-
 const Sessions = {
     createSession(req, res) {
-        const { error } = validate.validateSession(req.body);
-        if (error) return res.status(400).json({ status: 400, error: error.details[0].message });
-
         const session = SessionsModel.createSession(req.body);
         const menteeId = req.user.id;
         const menteeEmail = req.user.email;
@@ -26,13 +21,6 @@ const Sessions = {
 
     acceptSession(req, res) {
         const search = SessionsModel.sessions.find(userId => userId.sessionId === parseInt(req.params.sessionId, 10));
-        if (!search) {
-            return res.status(404).send({
-                status: 404,
-                message: `session ${req.params.sessionId} doesn't exist`,
-            });
-        }
-
         search.status = 'accepted';
         const menteeId = req.user.id;
         const menteeEmail = req.user.email;
@@ -51,13 +39,6 @@ const Sessions = {
 
     declineSession(req, res) {
         const search = SessionsModel.sessions.find(userId => userId.sessionId === parseInt(req.params.sessionId, 10));
-        if (!search) {
-            return res.status(404).send({
-                status: 404,
-                message: `session ${req.params.sessionId} doesn't exist`
-            });
-        }
-
         search.status = 'declined';
         const menteeId = req.user.id;
         const menteeEmail = req.user.email;
